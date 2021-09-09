@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+
+\title{Introduction to Statistical Learning: Chapter 2 Excersizes}
+\author{Sean Rollins}
+
+\begin{document}
+\maketitle
+
+
+\begin{enumerate}
+
+	\item{
+	\begin{enumerate}
+	
+		\item{An inflexible method would be expected to fit better because with only a few predictors, the relationship is simpler.}
+		\item{A flexible method would be better, because methods with low flexibility fail at approximating a multivariate relationship.}
+		\item{A highly flexible method would be expected to be better because methods with low flexibility fail at modeling sophisticated, complex relationships.}
+		\item{One cannot derive whether a flexible method or an inflexible method would perform better because $
+		\mathbf{Var}(\varepsilon)$ is not a function of flexibility.}
+	
+	\end{enumerate}
+	}
+	
+	\item{
+		\begin{enumerate}
+		
+			\item{Regression, inference. $n = 500, p = 3$}
+			\item{Classification, prediction, $n = 20, p = 13$}
+			\item{Regression, prediction, $n = 52 , p = 3$}
+		
+		
+		\end{enumerate}
+	}
+	
+	\item{
+	
+		\begin{enumerate}
+		
+			\item{dont feel like it rn}
+			\item{}
+		
+		\end{enumerate}
+	
+	}
+	
+	\item{
+		\begin{enumerate}
+		
+			\item{Predicting presence of a disease, based on variables associted with bloodwork, predicting someone's answer on a true/false question, based on demographic predictors, and predicting the species of an animal based on color, weight, etc.}
+			\item{Predicting the price of a security in the future based on its historical price data, seeking the relationship between standardized test scores and the household income of each participant, and predicting the amount of rainfall in the near future based on factors such air pressure, temperature, etc.}
+			\item{Dividing customers of a certain store into different groups based on frequency of purchase and average money spent, reallocating congressional districts based on data regarding the income, location and the demographic composition of a state's constituients, categorizing regions as urban, suburban or rural based on population density.}
+			
+		\end{enumerate}
+	}
+	
+	\item{Flexible approaches are better, when it is known that relationship between the response variables and the predictors is known to be complex, either having many important predictors, or a complicated function of few predictors. In general, one sacrifices interpritability of the model, and it may be prone to overfitting.  Flexible approaches are better, when it is known that the relationship between the response variables and predictors is less complex, possibly due to there being a small number of predictors. In general, one may sacrifice accuracy in the form of there being and increased bias, but one gains human interpretibility, which is important if one wishes to visualize or otherwise seek relationships between indivudual predictors and responses.}
+	
+	\item{A parametric approach reduces the problem to computing a vector of parameters. Its efficacy(and efficacy relative to non-parametric methods) hinges on how similar the form chosen for $\hat{f}(X)$ is to $f(X)$. Non-parametric functions can fit a wide variety of shapes if the form of $f$ is not known, but can be costly and be prone to overfitting(but generally less severe than guessing $f$ wrong with parametric approaches).}
+	
+	\item{
+	
+	\begin{enumerate}
+	
+		\item{$O_1 = 3, O_2 = 2, O_3 = \sqrt{10}, O_4 = \sqrt{5}, O_5 = \sqrt{2}, O_6 = \sqrt{3}$}
+		\item{Our prediction is $\mathbf{Green}$ because $O_5$ is the 1st closest to the origin and is associated with $\mathbf{Green}$.}
+		\item{Our prediction is $\mathbf{Red}$ because $O_5, O_6$, and $O_2$ are the 3 closest to the origin and two-thirds of them have $\mathbf{Red}$ as the associated response variable.}
+		\item{We should expect the best value for $K$ to be small because smaller $K$ introduces increased flexiblity, which gives complex decision boundaries, resulting in a suitable approximation of the Bayes decision boundary.}
+	\end{enumerate}
+	
+	}
+
+\end{enumerate}
+
+\end{document}
